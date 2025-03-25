@@ -191,7 +191,7 @@ int main(void)
   {
     HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
     update_encoder(&controller);
-    printf("Encoder: %d\n", controller.q_single);
+    printf(">Encoder: %d\r\n", controller.raw_encoder);
     HAL_Delay(100);
     /* USER CODE END WHILE */
 
